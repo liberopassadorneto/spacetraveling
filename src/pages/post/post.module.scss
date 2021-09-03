@@ -19,6 +19,15 @@
 
     color: var(--heading);
   }
+
+  > span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1rem;
+    color: var(--info);
+  }
+
   .postInfo {
     margin-top: 1.5rem;
 
@@ -34,6 +43,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 1rem;
     }
 
     & svg {
@@ -76,5 +86,37 @@
     li {
       margin: 0.5rem 0;
     }
+  }
+}
+
+.navigation {
+  max-width: 720px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--body);
+
+  margin: 3.75rem auto 5rem;
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--heading);
+    margin: 3rem auto 0.5rem;
+  }
+
+  a {
+    color: var(--highlight);
+    font-weight: 600;
+  }
+
+  div {
+    padding-top: 1.5rem;
+  }
+
+  div + div {
+    text-align: right;
   }
 }
